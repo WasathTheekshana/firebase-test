@@ -18,15 +18,17 @@ function App() {
 
   return (
     <div className="App">
-      {user.map((user) => {
-        return (
-          <div>
-            {" "}
-            <h1>Name: {user.name}</h1>
-            <h1>Age: {user.age}</h1>
-          </div>
-        );
-      })}
+      <div>
+        {user.map((user) => {
+          return (
+            <div>
+              {" "}
+              <h1>Name: {user.name}</h1>
+              <h1>Age: {user.age}</h1>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
